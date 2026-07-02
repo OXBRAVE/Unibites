@@ -1,0 +1,101 @@
+[
+  {
+    "id": "cmn0jl0410003u314gq260825",
+    "name": "Ofada rice",
+    "description": "per plate",
+    "price": 1200,
+    "imageUrl": "/food-images/ofada-rice.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0q0001u3wg23vt36bl"
+  },
+  {
+    "id": "cmn0jopjb0005u314thguzpq5",
+    "name": "Yam&egg",
+    "description": "per plate",
+    "price": 2000,
+    "imageUrl": "/food-images/yam-and-egg.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0q0001u3wg23vt36bl"
+  },
+  {
+    "id": "cmn0tyd2k0007u314zyhikyp5",
+    "name": "Poundo Yam",
+    "description": "per plate",
+    "price": 3000,
+    "imageUrl": "/food-images/poundo-yam.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0q0001u3wg23vt36bl"
+  },
+  {
+    "id": "cmn3r44sx0004u3k06d6trt5y",
+    "name": "Beans",
+    "description": "Per plate",
+    "price": 1500,
+    "imageUrl": "/food-images/beans.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0q0001u3wg23vt36bl"
+  },
+  {
+    "id": "cmn3r4fwo0006u3k09r1q9sh1",
+    "name": "Porridge ",
+    "description": "Per plate",
+    "price": 1200,
+    "imageUrl": "/food-images/porridge.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0q0001u3wg23vt36bl"
+  },
+  {
+    "id": "cmn3r51nl0008u3k0ihji8acs",
+    "name": "Catfish Pepper soup",
+    "description": "Per plate",
+    "price": 1800,
+    "imageUrl": "/food-images/catfish-pepper-soup.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0q0001u3wg23vt36bl"
+  },
+  {
+    "id": "cmn3r5eyp000au3k0p9hjo9rf",
+    "name": "fried yam",
+    "description": "per plate",
+    "price": 1000,
+    "imageUrl": "/food-images/fried-yam.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0q0001u3wg23vt36bl"
+  },
+  {
+    "id": "cmn3r5rjy000cu3k0rv57dd3v",
+    "name": "Amala",
+    "description": "Per plate",
+    "price": 1500,
+    "imageUrl": "/food-images/amala.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0q0001u3wg23vt36bl"
+  },
+  {
+    "id": "cmn3rkd5x0002u3rko6rftdpk",
+    "name": "Rice",
+    "description": "per plate",
+    "price": 1200,
+    "imageUrl": "/food-images/rice.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu110002u3wg9ao1gqcg"
+  },
+  {
+    "id": "cmn3rl2i10004u3rkfe5wj4lc",
+    "name": "Rice",
+    "description": "per plate",
+    "price": 1000,
+    "imageUrl": "/food-images/rice.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0e0000u3wgeedvzw9i"
+  },
+  {
+    "id": "cmn61c55y0001u3nks2y9ptvl",
+    "name": "Rice and stew",
+    "description": "per plate",
+    "price": 1200,
+    "imageUrl": "/food-images/rice-and-stew.jpg",
+    "isAvailable": true,
+    "restaurantId": "cmn0enu0e0000u3wgeedvzw9i"
+  }
+]

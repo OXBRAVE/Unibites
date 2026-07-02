@@ -1,0 +1,12 @@
+[
+  {
+    "id": "cmn0u0k0q0009u314egouo0v6",
+    "userId": "cmn0h2qgf0000u3140djwe3mh",
+    "restaurantId": "cmn0enu0q0001u3wg23vt36bl",
+    "status": "Ready for Pickup",
+    "pickupTime": null,
+    "totalAmount": 2400,
+    "createdAt": "2026-03-21T21:20:18.265Z",
+    "updatedAt": "2026-03-21T21:21:33.490Z"
+  }
+]

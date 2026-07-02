@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cmn0enu6a0004u3wg8pbatnma",
+    "name": "Manna Admin",
+    "studentId": null,
+    "email": "admin@manna.com",
+    "password": "$2b$10$992iwOKA30DTrwh4l93N/emKvcdQfWmXvWVRmdqqdUqwsIHAcg246",
+    "hallOfResid": null,
+    "role": "ADMIN",
+    "restaurantName": "Manna"
+  },
+  {
+    "id": "cmn0enu6q0005u3wgkh01od67",
+    "name": "Onisasun Admin",
+    "studentId": null,
+    "email": "admin@onisasun.com",
+    "password": "$2b$10$992iwOKA30DTrwh4l93N/emKvcdQfWmXvWVRmdqqdUqwsIHAcg246",
+    "hallOfResid": null,
+    "role": "ADMIN",
+    "restaurantName": "Onisasun"
+  },
+  {
+    "id": "cmn0enu6y0006u3wgnmjzcfwz",
+    "name": "Dome Admin",
+    "studentId": null,
+    "email": "admin@dome.com",
+    "password": "$2b$10$992iwOKA30DTrwh4l93N/emKvcdQfWmXvWVRmdqqdUqwsIHAcg246",
+    "hallOfResid": null,
+    "role": "ADMIN",
+    "restaurantName": "Dome"
+  },
+  {
+    "id": "cmn0enu780007u3wgw8rv88tn",
+    "name": "Rehoboth Admin",
+    "studentId": null,
+    "email": "admin@rehoboth.com",
+    "password": "$2b$10$992iwOKA30DTrwh4l93N/emKvcdQfWmXvWVRmdqqdUqwsIHAcg246",
+    "hallOfResid": null,
+    "role": "ADMIN",
+    "restaurantName": "Rehoboth"
+  },
+  {
+    "id": "cmn0h2qgf0000u3140djwe3mh",
+    "name": "Abiala Bishop Olumide",
+    "studentId": "DU0512",
+    "email": "bishopabiala@gmail.com",
+    "password": "$2b$10$YlK7xzdqpX4qV6WluyO16OmwV7aPZZKk49ncUn9jNTZsK0VtsqsBm",
+    "hallOfResid": "Goodness Hall",
+    "role": "STUDENT",
+    "restaurantName": null
+  },
+  {
+    "id": "cmn0hdmta0001u314kgdl91vy",
+    "name": "Omowunmi ",
+    "studentId": null,
+    "email": "Onisasundu@gmail.com",
+    "password": "$2b$10$8BrHa4H3dZhczazw/CPfsOlj5Q7jHTUs.seeyMZQjNLc7ZXO/kDAC",
+    "hallOfResid": null,
+    "role": "ADMIN",
+    "restaurantName": "Onisasun"
+  },
+  {
+    "id": "cmn3qyuac0000u3k0csau7f6b",
+    "name": "Manna Restaurant ",
+    "studentId": null,
+    "email": "Manna_Du@gmail.com",
+    "password": "$2b$10$EKJaV1flm4SXaEsE.xqLoOLHMIpIjCcxf3plHrwQV4GgKARzhT8Am",
+    "hallOfResid": null,
+    "role": "ADMIN",
+    "restaurantName": "Manna"
+  },
+  {
+    "id": "cmn3rj7170000u3rkznecuvtv",
+    "name": "Pastor Dolapo Adelakun",
+    "studentId": null,
+    "email": "Dome_Du@gmail.com",
+    "password": "$2b$10$RTnlyGHLkRaQVfmF34wBN.WELtXSuqPv05b2Sn1QuzDysC2tRMccy",
+    "hallOfResid": null,
+    "role": "ADMIN",
+    "restaurantName": "Dome"
+  },
+  {
+    "id": "cmn65zbpv0004u3hszatrz640",
+    "name": "Dome",
+    "studentId": null,
+    "email": "Dome_du@gmail.com",
+    "password": "$2b$10$E6l6bo8FGZYSFdm/oV7vLuWcsPlpgkOZTL/vYnSa/xKLZBB.11uXO",
+    "hallOfResid": null,
+    "role": "ADMIN",
+    "restaurantName": "Dome"
+  }
+]

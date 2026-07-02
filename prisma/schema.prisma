@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String    @id @default(cuid())
+  name           String
+  studentId      String?   @unique
+  email          String    @unique
+  password       String
+  hallOfResid    String?
+  role           String    @default("STUDENT") // STUDENT, ADMIN, SUPERADMIN
+  restaurantName String?   // If role is ADMIN, tie them to a specific restaurant
+  orders         Order[]
+  feedbacks      Feedback[]
+}
+
+model Restaurant {
+  id          String      @id @default(cuid())
+  name        String      @unique // Manna, Onisasun, Dome, Rehoboth
+  description String?
+  isFlagged   Boolean     @default(false)
+  flagMessage String?
+  isBanned    Boolean     @default(false)
+  menuItems   MenuItem[]
+  orders      Order[]
+  feedbacks   Feedback[]
+}
+
+model MenuItem {
+  id           String      @id @default(cuid())
+  name         String
+  description  String
+  price        Float
+  imageUrl     String?     // Added image support
+  isAvailable  Boolean     @default(true)
+  restaurantId String
+  restaurant   Restaurant  @relation(fields: [restaurantId], references: [id])
+  orderItems   OrderItem[]
+}
+
+model Order {
+  id           String      @id @default(cuid())
+  userId       String
+  restaurantId String
+  status       String      @default("Pending") // Pending, Preparing, Ready for Pickup, Completed
+  pickupTime   DateTime?
+  totalAmount  Float       @default(0)
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  user         User        @relation(fields: [userId], references: [id])
+  restaurant   Restaurant  @relation(fields: [restaurantId], references: [id])
+  items        OrderItem[]
+}
+
+model OrderItem {
+  id         String   @id @default(cuid())
+  orderId    String
+  menuItemId String
+  quantity   Int
+  order      Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  menuItem   MenuItem @relation(fields: [menuItemId], references: [id])
+}
+
+model Feedback {
+  id           String     @id @default(cuid())
+  rating       Int
+  comment      String?
+  userId       String
+  restaurantId String
+  createdAt    DateTime   @default(now())
+  user         User       @relation(fields: [userId], references: [id])
+  restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
+}

@@ -1,0 +1,40 @@
+﻿
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\admin\AdminDashboard.tsx
+  8:70  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\admin\AnalyticsView.tsx
+  10:62  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  36:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\admin\MenuManager.tsx
+  4:105  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  6:50   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\admin\OrderList.tsx
+   4:71  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  32:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\api\admin\menu\[id]\route.ts
+  18:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  31:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\api\admin\menu\route.ts
+  14:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\api\admin\orders\[id]\route.ts
+  19:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\api\orders\route.ts
+  28:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\api\register\route.ts
+  43:23  warning  '_' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\api\staff\register\route.ts
+  48:23  warning  '_' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\HP\.gemini\antigravity\scratch\uni-restaurant-system\src\app\forgot-password\page.tsx
+  25:14  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 15 problems (8 errors, 7 warnings)
+

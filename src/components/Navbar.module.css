@@ -84,11 +84,24 @@
 }
 
 @media (max-width: 768px) {
-  .navLinks {
+  .navContainer {
+    height: auto;
+    padding: 1rem 0;
+    flex-direction: column;
     gap: 1rem;
   }
-  .userMenu {
-    padding-left: 1rem;
+  .navLinks {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
+    width: 100%;
+  }
+  .userMenu {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    width: 100%;
+    justify-content: center;
   }
 }

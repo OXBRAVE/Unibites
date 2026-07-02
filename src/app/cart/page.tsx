@@ -90,9 +90,9 @@ export default function CartPage() {
         </div>
       </div>
       
-      <div style={{ display: "flex", justifyContent: "flex-end", gap: "1rem" }}>
-        <button onClick={clearCart} className="btn btn-secondary">Clear Cart</button>
-        <button onClick={handleCheckout} className="btn btn-primary" disabled={loading}>
+      <div style={{ display: "flex", justifyContent: "flex-end", gap: "1rem", flexWrap: "wrap" }}>
+        <button onClick={clearCart} className="btn btn-secondary" style={{ flex: "1 1 auto" }}>Clear Cart</button>
+        <button onClick={handleCheckout} className="btn btn-primary" disabled={loading} style={{ flex: "1 1 auto" }}>
           {loading ? "Processing..." : "Confirm & Place Order"}
         </button>
       </div>

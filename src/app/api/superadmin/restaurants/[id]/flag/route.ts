@@ -3,7 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 
-export async function PATCH(request: Request, { params }: { params: { id: string } }) {
+export async function PATCH(request: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     const session = await getServerSession(authOptions);
     if (!session || session.user.role !== "SUPERADMIN") {
@@ -11,10 +11,10 @@ export async function PATCH(request: Request, { params }: { params: { id: string
     }
 
     const { isFlagged, flagMessage } = await request.json();
-    const resolvedParams = await Promise.resolve(params);
+    const { id } = await params;
 
     const restaurant = await prisma.restaurant.update({
-      where: { id: resolvedParams.id },
+      where: { id },
       data: { 
         isFlagged,
         flagMessage: isFlagged ? flagMessage : null

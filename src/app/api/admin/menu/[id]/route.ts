@@ -3,13 +3,13 @@ import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 
-export async function PUT(request: Request, { params }: { params: { id: string } }) {
+export async function PUT(request: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     const session = await getServerSession(authOptions);
     if (!session || session.user.role !== "ADMIN") return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
 
     const body = await request.json();
-    const resolvedParams = await Promise.resolve(params);
+    const { id } = await params;
 
     const imageName = body.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
     const potentialImageUrl = `/food-images/${imageName}.jpg`;
@@ -20,7 +20,7 @@ export async function PUT(request: Request, { params }: { params: { id: string }
     };
 
     const menuItem = await prisma.menuItem.update({
-      where: { id: resolvedParams.id },
+      where: { id },
       data: menuItemData
     });
     return NextResponse.json(menuItem);
@@ -29,13 +29,13 @@ export async function PUT(request: Request, { params }: { params: { id: string }
   }
 }
 
-export async function DELETE(request: Request, { params }: { params: { id: string } }) {
+export async function DELETE(request: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     const session = await getServerSession(authOptions);
     if (!session || session.user.role !== "ADMIN") return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
 
-    const resolvedParams = await Promise.resolve(params);
-    await prisma.menuItem.delete({ where: { id: resolvedParams.id } });
+    const { id } = await params;
+    await prisma.menuItem.delete({ where: { id } });
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ message: "Error deleting menu item" }, { status: 500 });

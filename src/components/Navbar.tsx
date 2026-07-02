@@ -12,7 +12,7 @@ export default function Navbar() {
   const totalItems = items.reduce((acc, current) => acc + current.quantity, 0);
 
   return (
-    <header className={`${styles.header} glass`}>
+    <header className={styles.header}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
           Uni<span className={styles.logoHighlight}>Bites</span>
